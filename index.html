@@ -11,17 +11,18 @@
     <header>
       <nav id="main-nav">
       <ul>
-        <li><a href="index.html">Homepage &lpar;Index&rpar;</a></li>
+        <li><a href="index.html">Homepage</a></li>
         <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
         <li><a href="favorite_things.html">Favorite Things</a></li>
       </ul>
     </nav>
     </header>
-      <!-- <img src="media/kuromi.gif" alt="Kuromi from the Japanese Sanrio company blinking gif"> -->
+    <main>
       <section id="welcome">
         <h1>Welcome to Nickole's Website!</h1>
         <img src="media/kuromi.gif" alt="Kuromi from the Japanese Sanrio company blinking gif.">
       </section>
+      
       <section id="about_me">
         <h2>About Me:</h2>
         <img src="media/me_and_computer.jpg" alt="Me (Nickole) doing work on my computer at Illinois Tech.">
@@ -34,8 +35,9 @@
         <a href="https://itm.iit.edu/speller/" target="_blank">Professor Barry Speller</a>.</p>
         <img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
         <p><strong>Fun Fact:</strong> I'm actually Colombian-American! Both of my parents were born and raised in Colombia, while I was born and raised in Chicago,
-                   Illinois.
+           Illinois.
       </section>
+      
       <section id="interests">
         <h2>My Interests:</h2>
         <h3>Favorite TV Shows:</h3>
@@ -47,9 +49,16 @@
           <li>Smiling Friends</li>
           <li>South Park</li>
         </ul>
-        <video width="414" height="230" title="My favorite Smiling Friends clip" controls>
-          <source src="media/smiling_friends_clip.mp4" type="video/mp4">
-        </video>
+        <figure>
+          <!--<video title="My favorite Smiling Friends clip" controls>
+            <source src="media/smiling_friends_clip.mp4" type="video/mp4">
+          </video>-->
+          <iframe
+            width="560" height="315" src="https://www.youtube.com/clip/UgkxV56liu7vTtLTpX-0Vn2n1IxHcmSL7VHF"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> <!-- Copied from YouTube's "Embed" feature-->
+          <figcaption>My favorite clip from the first show on my list</figcaption>
+        </figure>
         <h3>Favorite Bands:</h3>
         <ol>
           <li>Limp Bizkit</li>
@@ -60,6 +69,7 @@
         </ol>
         <p><strong>HMs:</strong> Joyce Manor, Fall Out Boy, and Korn</p>
       </section>
+    </main>
   </div>
 </body>
 
