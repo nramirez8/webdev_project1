@@ -35,9 +35,36 @@ a:visited {
 
 h1 {
   margin-top: 12px;
+  margin-bottom: 0px;
   text-align: center;
   padding-top: 10px;
-  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Emilys Candy", serif;
+} 
+
+#kuromi2 {
+  float: right;
+  padding-right: 10px;
+}
+
+#kuromis {
+  margin-bottom: 3em;
+}
+
+#Nickole {
+  float: right;
 }
 
 #main-nav {
@@ -83,6 +110,7 @@ h1 {
   background-color: oldlace;
   padding-bottom: 16px;
   margin-bottom: -16px;
+  padding-left: 10px;
 }
 
 #page-wrapper {
@@ -114,4 +142,9 @@ h1 {
 
 #footer p a {
   font-weight: normal;
+}
+
+strong {
+  font-weight: 800;
+  font-size: 1rem;
 }
