@@ -11,7 +11,8 @@ a {
 }
 
 a:hover {
-  color: white !important;
+  --color: white;
+  color: #615b5b !important;
 }
 
 a:visited {
@@ -19,15 +20,18 @@ a:visited {
 }
 
 .fa-solid fa-house-chimney {
-  color: #615b5b;
+  --color: #615b5b;
+  color: white;
 }
 
 .fa-solid fa-file-lines {
-  color: #615b5b;
+  --color: #615b5b;
+  color: white;
 }
 
 .fa-solid fa-pepper-hot {
- color: #615b5b; 
+ --color: #615b5b;
+ color: white;
 }
 
 h1 {
@@ -39,7 +43,7 @@ h1 {
 #main-nav {
   float: left;
   width: 100%;
-  background-color: rosybrown;
+  background-color: #ebb2cf;
   margin-bottom: 16px;
 }
 
@@ -59,15 +63,17 @@ h1 {
 }
 
 #main-nav ul li a {
-  padding: 10px 12px;
+  padding: 10px 20px;
   display: block;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  color: #615b5b;
+  --color: #615b5b;
+  color: white;
 }
 
 #main-nav ul li a:hover {
+  --color: #615b5b;
   background-color: #b38282;
 }
 
@@ -85,7 +91,7 @@ h1 {
 }
 
 #footer {
-  background-color: rosybrown;
+  background-color: #ebb2cf;
   height: 65px;
   clear: both;
   text-align: center;
@@ -93,7 +99,7 @@ h1 {
 }
 
 #footer p {
-  color: #333;
+  color: white;
   margin: 0;
   line-height: 1.5;
   font-weight: bold;
