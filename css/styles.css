@@ -38,24 +38,26 @@ h1 {
   margin-bottom: 0px;
   text-align: center;
   padding-top: 10px;
-  font-size: 2.5rem;
+  font-size: 40px;
   --font-weight: 900;
 }
 
+
 h2 {
-  font-size: 1.875rem;
+  font-size: 30px
 }
 
+
 h3 {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Emilys Candy", serif;
+  font-family: "Emilys Candy", Arial, serif;
 }
 
 p {
-  font-family: sans-serif;
+  font-family: Georgia, sans-serif;
   font-size: 18px;
 }
 
@@ -65,7 +67,7 @@ p {
 }
 
 #kuromis {
-  margin-bottom: 3em;
+  margin-bottom: 48px;
 }
 
 #school-yap {
@@ -156,6 +158,7 @@ p {
   margin: 0;
   line-height: 1.5;
   font-weight: bold;
+  font-size: 14px;
   --text-shadow: 2px 1px 2px #000000;
 }
 
