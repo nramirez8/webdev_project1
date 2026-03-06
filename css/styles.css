@@ -38,12 +38,15 @@ a:visited {
 }*/
 
 .gradient-box {
-  /*background: hsla(349, 100%, 73%, 1);*/
-  background: linear-gradient(135deg, hsla(349, 100%, 73%, 1) 0%, hsla(343, 96%, 91%, 1) 100%);
-  /*background: -moz-linear-gradient(315deg, hsla(349, 100%, 73%, 1) 0%, hsla(343, 74%, 85%, 1) 100%);
-  background: -webkit-linear-gradient(315deg, hsla(349, 100%, 73%, 1) 0%, hsla(343, 74%, 85%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF758E", endColorstr="#F5BCCC", GradientType=1 );*/
+  /*background: linear-gradient(104deg,rgba(242, 157, 174, 1) 13%, rgba(248, 191, 197, 1) 30%, rgba(252, 212, 212, 1) 85%);
+  background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 207, 1) 86%);
+  background: radial-gradient(circle,rgba(252, 212, 212, 1) 30%, rgba(242, 157, 174, 1) 86%)*/
+  background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 179, 1) 86%);
 }
+
+/*.centered {
+  text-align: center !important;
+}*/
 
 h1 {
   margin-top: 12px;
@@ -51,7 +54,6 @@ h1 {
   text-align: center;
   padding-top: 10px;
   font-size: 40px;
-  /*font-weight: 900;*/
 }
 
 
@@ -76,24 +78,23 @@ p {
   line-height: 1.5;
 }
 
-#kuromis {
-  margin-bottom: 48px;
-}
 #kuromi2 {
   float: right;
   padding-right: 10px;
 }
 
 #school-yap {
-  min-height: 294px;
-  width: 78.5%;
+  margin: 30px auto;
   margin-bottom: 20px;
-  padding: 30px 10px;
+  min-height: 294px;
+  max-width: 95%;
+  padding: 35px 12px 20px 18px;
+  border: 3px solid #e48aa0;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.Nickole {
+.home-img {
   float: right;
   position: relative;
   max-width: 30%;
@@ -102,7 +103,36 @@ p {
 }
 
 #colombia-deets {
+  border: 3px solid #e48aa0;
+  border-radius: 12px;
+  padding: 12px 12px 12px 18px;
+  max-width: 95%;
+  margin: 20px auto;
+}
+
+#colombia-deets summary {
+  font-family: Georgia, sans-serif;
+  cursor: default;
+  font-size: 1.2em;
+}
+
+#fun-fact {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+#fun-fact img {
   clear: both;
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+#colombia-deets[open] #fun-fact {
+  min-height: 455px;
+  margin-top: -5px;
 }
 
 #main-nav {
@@ -134,28 +164,25 @@ p {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  --text-shadow: 1px 1px 5px #000000;
-  --color: #615b5b;
   color: white;
 }
 
 #main-nav ul li a:hover {
-  --color: #615b5b;
   text-shadow: 0px 0px 0px #000;
   background-color: #b38282;
 }
 
 #main-content {
   background-color: oldlace;
-  --padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
   margin-bottom: -18px;
   padding: 0px 10px 20px 10px;
 }
 
 #chilis-front {
   margin-top: 20px;
-  --padding-top: 10px;
 }
+  /*padding-top: 10px;*/
 
 #page-wrapper {
   width: 80%;
