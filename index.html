@@ -33,9 +33,9 @@
       </section>
       
       <section id="about-me">
-        <div class="gradient-box" id="school-yap">
-          <img class="home-img" src="media/me_and_computer.jpg" alt="Me (Nickole) doing work on my computer at Illinois Tech.">
-          <h2 class="center">About Me:</h2>
+        <div class="gradient-box school-yap">
+          <img src="media/me_and_computer.jpg" alt="Me (Nickole) doing work on my computer at Illinois Tech.">
+          <h2>About Me:</h2>
           <p>As you can tell from the title and header of this page, my name is Nickole!
              I'm a student at the <strong>Illinois Institute of Technology</strong> who is majoring in <strong>Applied Cybersecurity and IT Management</strong>.
              At the time of this website's creation, I'm just about wrapping up my third year here.
@@ -44,9 +44,11 @@
              <a href="https://www.iit.edu/directory/people/jeong-hyun-kang" target="_blank">Professor Jeong-Hyun Kang</a>, and
              <a href="https://itm.iit.edu/speller/" target="_blank">Professor Barry Speller</a>.</p>
         </div>
-        <details class="gradient-box" id="colombia-deets">
-          <summary><strong>Fun Fact...</strong></summary>
-          <div id="fun-fact">
+        <details class="gradient-box colombia-deets">
+          <summary>
+            <strong>Fun Fact...</strong>
+          </summary>
+          <div class="fun-fact">
             <p>I'm actually Colombian-American! Both of my parents were born and raised in Colombia, while I was born and raised in Chicago,
              Illinois.</p>
             <img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
@@ -55,45 +57,59 @@
       </section>
       
       <section id="interests">
-        <h2>My Interests:</h2>
-        
-        <section id="fav-shows">
-          <h3>Favorite TV Shows</h3>
-          <!--<p>I would make this an ordered list, but I'm very indecisive...</p>-->
-          <ul>
-            <li>Aqua Teen Hunger Force</li>
-            <li>Invader Zim</li>
-            <li>BoJack Horseman</li>
-            <li>South Park</li>
-            <li>Breaking Bad</li>
-          </ul>
-          <div id="player">
-            <iframe width="560" height="315"
-              src="https://www.youtube.com/embed/GZdAad0H-7U?start=84&end=112"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
-              allowfullscreen>
-            </iframe>
-            <p>&#8679; My favorite clip from the first show on my list &#8679;</p>
-          </div>
-        </section>
+        <div class="flowers interest-yap">
+          <h2 class="mcentered">My Interests:</h2>
+          
+          <section id="fav-shows">
+            <div class="content">
+              <h3>Favorite TV Shows</h3>
+              <!--<p>I would make this an ordered list, but I'm very indecisive...</p>-->
+              <ul>
+                <li>Aqua Teen Hunger Force</li>
+                <li>Invader Zim</li>
+                <li>BoJack Horseman</li>
+                <li>South Park</li>
+                <li>Breaking Bad</li>
+              </ul>
+            </div>
+            <div class="video">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/GZdAad0H-7U?start=84&end=112"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                allowfullscreen>
+              </iframe>
+              <p>&#8679; My favorite clip from the first show on my list &#8679;</p>
+            </div>
+          </section>
         
         <section id="fav-bands">
-          <h3>Favorite Bands</h3>
-          <ol>
-            <li>Limp Bizkit</li>
-            <li>Pierce the Veil</li>
-            <li>Paramore</li>
-            <li>My Chemical Romance</li>
-            <li>The Cure</li>
-          </ol>
-          <p><strong>HMs:</strong> Fall Out Boy, Korn, and Joyce Manor</p>
-          <video controls>
-            <source src="media/limp_bizkit.mp4" type="video/mp4">
-          </video>
-          <p>&#8679; Me at a Limp Bizkit concert &#8679;</p>
+          <div class="clearme video">
+            <video controls>
+              <source src="media/limp_bizkit.mp4" type="video/mp4">
+            </video>
+            <p>&#8679; Me at a Limp Bizkit concert &#8679;</p>
+          </div>
+          <div class="content">
+            <h3>Favorite Bands</h3>
+            <ol>
+              <li>Limp Bizkit</li>
+              <li>Pierce the Veil</li>
+              <li>Paramore</li>
+              <li>My Chemical Romance</li>
+              <li>The Cure</li>
+            </ol>
+            <div class="clearme dotted">
+              <h4>Honorable Mentions:</h4>
+              <ul>
+                <li>Fall Out Boy</li>
+                <li>Korn</li>
+                <li>Joyce Manor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         </section>
-        
       </section>
     </main>
     <footer id="footer">
