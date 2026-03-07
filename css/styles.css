@@ -178,7 +178,7 @@ p, li {
 }
 
 .fun-fact {
-  max-height: 0;
+  /*max-height: 0;*/
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
@@ -220,13 +220,8 @@ p, li {
 }
 
 #fav-bands video {
-  /*width: 270px;*/
   max-height: 480px;
   max-width: 270px;
-  /*display: block;
-  position: relative;
-  bottom: 30px;
-  right: -162px;*/
 }
 
 .video {
@@ -262,15 +257,15 @@ p, li {
 .dotted {
   margin-top: 10px;
   /*max-width: 200px;*/
-  max-width: 60%;
-  padding: 0px 12px;
-  border: 3px dotted white;
+  max-width: 40%;
+  padding: 0px 30px 0px 12px;
+  border: 3px dotted #e48aa0;
   border-radius: 12px;
 }
 
 .dotted h4 {
   font-weight: 500;
-  margin: 18px 0px
+  margin: 18px 0px;
 }
 
 .dotted ul {
