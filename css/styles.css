@@ -134,33 +134,37 @@ p, li {
   background-color: oldlace;
   /*padding-bottom: 30px;*/
   margin-bottom: 0px;
-  padding: 0px 10px 20px 10px;
+  padding: 0px 20px 20px 20px;
 }
 
 .school-yap {
   margin: 30px auto;
   margin-bottom: 0px;
   min-height: 294px;
-  max-width: 90%;
-  padding: 35px 12px 20px 18px;
+  max-width: 88%;
+  padding: 35px 20px 20px 30px;
   border: 3px solid #e48aa0;
   border-radius: 12px;
   overflow: hidden;
+}
+
+.school-yap p {
+  display: inline;
+  padding-right: 30px;
 }
 
 .school-yap img {
   float: right;
   max-width: 30%;
   height: auto;
-  padding-left: 20px;
   border-radius: 12px;
 }
 
 .colombia-deets {
   border: 3px solid #e48aa0;
   border-radius: 12px;
-  padding: 12px 12px 12px 18px;
-  max-width: 90%;
+  padding: 12px 20px 12px 30px;
+  max-width: 88%;
   margin: 10px auto;
   margin-top: 7px;
 }
@@ -281,6 +285,10 @@ p, li {
 }
   /*padding-top: 10px;*/
 
+.fixed {
+  width: 1228px !important;
+}
+
 #page-wrapper {
   width: 80%;
   margin: 0 auto;
@@ -301,14 +309,13 @@ p, li {
   line-height: 1.5;
   font-weight: bold;
   font-size: 14px;}
-/*text-shadow: 2px 1px 2px #000000;*/
-
-#footer #website-by {
-  text-shadow: 1px 1px 5px #000000;
-}
 
 #footer p a {
   font-weight: normal;
+}
+
+.shadow {
+  text-shadow: 1px 1px 5px #000000;
 }
 
 strong {
