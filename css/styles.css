@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px solid red;
+}*/
+
 body {
   background-image: url("../media/y2k_background.jpg");
   background-repeat: no-repeat;
@@ -369,7 +373,7 @@ p, li {
 .dessert {
   /*width: 560px;
   height: 560px;*/
-  min-width: 65%;
+  width: 65%;
   height: auto;
 }
 
@@ -384,24 +388,28 @@ p, li {
 	box-sizing: border-box;
   background-color: #fad4d9;
   float: left;
-	max-width: 25%;
-  margin: 0 2% 0 5%;
+  max-width: 25%;
+  margin: 0 2% 2% 5%;
+  padding-bottom: 0.75%;
   border: 2px solid #eaa1a8;
   border-top: 0px;
 }
 
 .boo-chilis audio {
   width: 90%;
-  margin-bottom: 1.5em;
+  margin-bottom: 4.5%;
 }
 
 #aside-content h2 {
-  margin-top: 0.6em;
+  margin-top: 7%;
+  max-width: 100%
 }
 
 #aside-content img {
   padding: 0;
-	margin: 0.7em 0 0 0;
+	margin: 7% 0 0 0;
+  max-width: 100%;
+  height: auto;
   overflow: auto;
 }
 
