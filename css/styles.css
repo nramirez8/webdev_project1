@@ -47,6 +47,11 @@ a:visited {
   background-size: cover;
 }
 
+.lcentered {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
 .mcentered {
   text-align: center;
   margin-top: 5px;
@@ -69,6 +74,10 @@ a:visited {
   font-size: 16px;
   text-align: center;
   margin-top: 5px;
+}
+
+.noverflow {
+  overflow: none !important;
 }
 
 h1 {
@@ -145,11 +154,10 @@ p, li {
   background-color: #b38282;
 }
 
-#main-content {
+.main-content {
   background-color: oldlace;
-  /*padding-bottom: 30px;*/
   margin-bottom: 0px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 20px;
   overflow: auto;
 }
 
@@ -301,7 +309,7 @@ p, li {
   width: 320px;
   margin: 0px 20px 0px -20px;
   padding: 10px 20px 550px 25px;
-  background-color: #ddb2b6;
+  background-color: #f2c4ca;
 }
 
 #information h2 {
@@ -342,9 +350,64 @@ p, li {
   margin-top: 55px;
 }
 
+.between-ratings h2 {
+  margin-top: 1.5em;
+}
+
 .chilis-image {
-  margin-top: 30px;
+  margin-top: 2em;
   text-align: center;
+}
+
+.chilis-front {
+  /*width: 900px;
+  height: 506px;*/
+  width: 90%;
+  height: auto;
+}
+
+.dessert {
+  /*width: 560px;
+  height: 560px;*/
+  min-width: 65%;
+  height: auto;
+}
+
+#chilis-main {
+	box-sizing: border-box;
+  float: left;
+	width: 60%;
+  margin: 0 2%;
+}
+
+#alternatives {
+	box-sizing: border-box;
+  background-color: #fad4d9;
+  float: left;
+	max-width: 25%;
+  margin: 0 2% 0 5%;
+  border: 2px solid #eaa1a8;
+  border-top: 0px;
+  
+}
+
+.boo-chilis audio {
+  width: 90%;
+  margin-bottom: 1.5em;
+}
+
+#aside-content h2 {
+  margin-top: 0.6em;
+}
+
+#aside-content img {
+  padding: 0;
+	margin: 0.7em 0 0 0;
+  overflow: auto;
+}
+
+#aside-content ol li {
+  list-style-type: lower-roman;
 }
 
 #page-wrapper {
