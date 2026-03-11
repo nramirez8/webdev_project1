@@ -137,6 +137,11 @@ p, li {
   margin-top: 20px;
 }
 
+#kuromis img {
+  max-width: 30%;
+  height: auto;
+}
+
 #kuromi2 {
   float: right;
 }
@@ -292,11 +297,11 @@ p, li {
 
 .dotted {
   margin-top: 10px;
-  /*max-width: 200px;*/
-  max-width: 40%;
+  max-width: 70%;
   padding: 0px 12px 0px 12px;
   border: 3px dotted #e48aa0;
   border-radius: 12px;
+  overflow: auto;
 }
 
 .dotted h4 {
@@ -439,7 +444,6 @@ p, li {
 	margin: 7% 0 0 0;
   max-width: 100%;
   height: auto;
-  overflow: auto;
 }
 
 #aside-content ol li {
