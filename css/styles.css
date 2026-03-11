@@ -1,55 +1,4 @@
-/* * {
-  outline: 1px solid red;
-}*/
-
-body {
-  background-image: url("../media/y2k_background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: Georgia, serif;
-}
-
-a {
-  color: darkmagenta;
-}
-
-a:hover {
-  --color: white;
-  color: #615b5b !important;
-}
-
-a:visited {
-  color: firebrick;
-}
-
-/*.fa-solid fa-house-chimney {
-  --color: #615b5b;
-  color: white;
-}
-
-.fa-solid fa-file-lines {
-  --color: #615b5b;
-  color: white;
-}
-
-.fa-solid fa-pepper-hot {
- --color: #615b5b;
- color: white;
-}*/
-
-.gradient-box {
-  /*background: linear-gradient(104deg,rgba(242, 157, 174, 1) 13%, rgba(248, 191, 197, 1) 30%, rgba(252, 212, 212, 1) 85%);
-  background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 207, 1) 86%);
-  background: radial-gradient(circle,rgba(252, 212, 212, 1) 30%, rgba(242, 157, 174, 1) 86%)*/
-  background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 179, 1) 86%);
-}
-
-.flowers {
-  background-image: url("../media/flowers.jpg");
-  background-position: center;
-  background-size: cover;
-}
+/* Generic classes, ids, and formatted elements begin below. */
 
 .lcentered {
   text-align: left;
@@ -80,15 +29,38 @@ a:visited {
   margin-top: 5px;
 }
 
-.noverflow {
-  overflow: none !important;
+body {
+  background-image: url("../media/y2k_background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Georgia, serif;
+}
+
+a {
+  color: darkmagenta;
+}
+
+a:hover {
+  --color: white;
+  color: #615b5b !important;
+}
+
+a:visited {
+  color: firebrick;
+}
+
+strong {
+  font-weight: 700;
+  font-size: 1em;
+  font-style: normal;
 }
 
 h1 {
-  margin-top: 12px;
-  margin-bottom: 0px;
+  margin-top: 12px !important;
+  margin-bottom: 0px !important;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
   font-size: 40px;
 }
 
@@ -106,20 +78,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Gorditas", Georgia, sans-serif !important;
   font-weight: 100;
   font-style: normal;
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 p, li {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
-#kuromis {
-  margin-top: 20px;
-}
-
-#kuromi2 {
-  float: right;
+#page-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
 }
 
 #main-nav {
@@ -158,6 +129,22 @@ p, li {
   background-color: #b38282;
 }
 
+/* Homepage-specific rules begin below. */
+
+/* Rules for the part of my homepage begin below. */
+
+#kuromis {
+  margin-top: 20px;
+}
+
+#kuromi2 {
+  float: right;
+}
+
+.gradient-box {
+  background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 179, 1) 86%);
+}
+
 .main-content {
   background-color: oldlace;
   margin-bottom: 0px;
@@ -165,30 +152,40 @@ p, li {
   overflow: auto;
 }
 
-.school-yap {
+#about-me h2 {
+  margin-top: 25px;
+}
+
+#about-me p {
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+.school-content {
   margin: 30px auto;
   margin-bottom: 0px;
-  min-height: 294px;
+  min-height: 235px;
   max-width: 88%;
-  padding: 35px 20px 20px 30px;
+  padding: 35px 20px 25px 30px;
   border: 3px solid #e48aa0;
   border-radius: 12px;
   overflow: hidden;
 }
 
-.school-yap p {
+.school-content p {
   display: inline;
-  padding-right: 30px;
+  margin: 0;
 }
 
-.school-yap img {
+.school-content img {
   float: right;
+  margin-left: 20px;
   max-width: 30%;
   height: auto;
   border-radius: 12px;
 }
 
-.colombia-deets {
+.colombia-content {
   border: 3px solid #e48aa0;
   border-radius: 12px;
   padding: 12px 20px 12px 30px;
@@ -197,20 +194,19 @@ p, li {
   margin-top: 7px;
 }
 
-.colombia-deets summary {
+.colombia-content summary {
   font-family: Georgia, serif;
-  cursor: default;
+  cursor: pointer;
   font-size: 18px;
   font-weight: 700;
 }
 
-.colombia-deets[open] .fun-fact {
+.colombia-content[open] .fun-fact {
   min-height: 455px;
   margin-top: -5px;
 }
 
 .fun-fact {
-  /*max-height: 0;*/
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
@@ -223,13 +219,21 @@ p, li {
   border-radius: 12px;
 }
 
-#interests h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  margin-top: 20px;
+/* Rules for the second part of my homepage begin below. */
+
+.flowers {
+  background-image: url("../media/flowers.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.interest-yap {
+#interests h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.interests-content {
   margin: 30px auto;
   margin-bottom: 20px;
   /*min-height: 294px;*/
@@ -272,17 +276,17 @@ p, li {
 
 .video p {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
-.content {
+.media-content {
   float: right;
   /*max-width: 100%;*/
   width: 40%;
   margin-left: 5%;
 }
 
-.content ol {
+.media-content ol {
   padding-bottom: 26px;
 }
 
@@ -290,14 +294,14 @@ p, li {
   margin-top: 10px;
   /*max-width: 200px;*/
   max-width: 40%;
-  padding: 0px 30px 0px 12px;
+  padding: 0px 12px 0px 12px;
   border: 3px dotted #e48aa0;
   border-radius: 12px;
 }
 
 .dotted h4 {
   font-weight: 500;
-  margin: 18px 0px;
+  margin: 18px 0px 12px 0;
 }
 
 .dotted ul {
@@ -308,11 +312,19 @@ p, li {
   font-size: 16px;
 }
 
+/* Résumé-specific rules begin below. */
+
+/* Rules for my personal information begin below. */
+
+.gaps {
+  margin-bottom: 80px;
+}
+
 #information {
   float: left;
   width: 320px;
   margin: 0px 20px 0px -20px;
-  padding: 10px 20px 550px 25px;
+  padding: 10px 20px 708px 25px;
   background-color: #f2c4ca;
 }
 
@@ -325,6 +337,10 @@ p, li {
   list-style-type: square;
 }
 
+#information li a {
+  word-wrap: break-word;
+}
+
 #information ol li {
   font-size: 16px;
   list-style-type: lower-roman;
@@ -334,14 +350,28 @@ p, li {
   margin-top: 50px;
 }
 
-.gaps {
-  margin-bottom: 80px;
+/* Rules for my expertise begin below */
+
+.gaps2 {
+  margin-top: 50px;
+}
+
+.pink-outline {
+  border: 3px solid #f2c4ca;
+  border-radius: 12px;
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+
+.pink-outline h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 #bulk {
   float: left;
   width: 800px;
-	margin-top: 40px;
+	margin: 40px 0px;
   padding: 0px 0px 0px 12px;
   background-color: oldlace;
 }
@@ -350,29 +380,23 @@ p, li {
   list-style-type: square;
 }
 
-.gaps2 {
-  margin-top: 55px;
-}
-
-.between-ratings h2 {
-  margin-top: 1.5em;
-}
-
-.chilis-image {
-  margin-top: 2em;
-  text-align: center;
-}
+/* Chili's-specific rules begin below. */
 
 .chilis-front {
-  /*width: 900px;
-  height: 506px;*/
   width: 90%;
   height: auto;
 }
 
+.chilis-image {
+  margin-top: 3.5%;
+  text-align: center;
+}
+
+.between-ratings h2 {
+  margin-top: 6%;
+}
+
 .dessert {
-  /*width: 560px;
-  height: 560px;*/
   width: 65%;
   height: auto;
 }
@@ -382,6 +406,11 @@ p, li {
   float: left;
 	width: 60%;
   margin: 0 2%;
+}
+
+.left-border {
+  padding-left: 1%;
+  border-left: 6px solid #eaa1a8;
 }
 
 #alternatives {
@@ -397,7 +426,7 @@ p, li {
 
 .boo-chilis audio {
   width: 90%;
-  margin-bottom: 4.5%;
+  margin-bottom: 4%;
 }
 
 #aside-content h2 {
@@ -417,11 +446,7 @@ p, li {
   list-style-type: lower-roman;
 }
 
-#page-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
-}
+/* Footer rules begin below. */
 
 #footer {
   background-color: #ebb2cf;
@@ -437,7 +462,8 @@ p, li {
   margin-bottom: 5px;
   line-height: 1.5;
   font-weight: bold;
-  font-size: 14px;}
+  font-size: 14px;
+ }
 
 #footer p a {
   font-weight: normal;
@@ -445,12 +471,6 @@ p, li {
 
 .shadow {
   text-shadow: 1px 1px 5px #000000;
-}
-
-strong {
-  font-weight: 700;
-  font-size: 1em;
-  font-style: normal;
 }
 
 /*.gorditas-regular { <!--Ask about this-->
