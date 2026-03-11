@@ -364,7 +364,7 @@ p, li {
 .pink-outline {
   border: 3px solid #f2c4ca;
   border-radius: 12px;
-  padding: 0 8px;
+  padding: 4px 8px;
   margin-bottom: 10px;
 }
 
