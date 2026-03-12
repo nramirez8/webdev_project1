@@ -19,10 +19,6 @@
   clear: both;
 }
 
-.fixed {
-  width: 1228px !important;
-}
-
 .caption {
   font-size: 16px;
   text-align: center;
@@ -75,7 +71,7 @@ h3 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gorditas", Georgia, sans-serif !important;
+  font-family: "Gorditas", Georgia, serif !important;
   font-weight: 100;
   font-style: normal;
   margin-top: 5px;
@@ -321,6 +317,10 @@ p, li {
 
 /* Rules for my personal information begin below. */
 
+/*.fixed {
+  width: 1228px !important;
+}*/
+
 .gaps {
   margin-bottom: 80px;
 }
@@ -476,15 +476,3 @@ p, li {
 .shadow {
   text-shadow: 1px 1px 5px #000000;
 }
-
-/*.gorditas-regular { <!--Ask about this-->
-  font-family: "Gorditas", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.gorditas-bold {
-  font-family: "Gorditas", serif;
-  font-weight: 700;
-  font-style: normal;
-}*/
