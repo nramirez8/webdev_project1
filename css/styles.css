@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  font-family: Georgia, serif;
+  font-family: Georgia, Times New Roman, serif;
 }
 
 a {
@@ -112,7 +112,7 @@ p, li {
 }
 
 #main-nav ul li a {
-  font-family: Georgia, serif;
+  font-family: Georgia, Times New Roman, serif;
   padding: 10px 20px;
   display: block;
   text-decoration: none;
@@ -197,7 +197,7 @@ p, li {
 }
 
 .colombia-content summary {
-  font-family: Georgia, serif;
+  font-family: Georgia, Times New Roman, serif;
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
