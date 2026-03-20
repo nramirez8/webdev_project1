@@ -27,7 +27,6 @@
 
 body {
   background-image: url("../media/y2k_background.jpg");
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   font-family: Georgia, Times New Roman, serif;
@@ -38,7 +37,6 @@ a {
 }
 
 a:hover {
-  --color: white;
   color: #615b5b !important;
 }
 
@@ -317,11 +315,6 @@ p, li {
 /* Résumé-specific rules begin below. */
 
 /* Rules for my personal information begin below. */
-
-/*.fixed {
-  width: 1228px !important;
-}*/
-
 .gaps {
   margin-bottom: 80px;
 }
@@ -329,6 +322,7 @@ p, li {
 #information {
   float: left;
   width: 320px;
+  /*height: 107rem; Make padding-bottom = 800 --> delete this line */
   margin: 0px 20px 0px -20px;
   padding: 10px 20px 800px 25px;
   background-color: #f2c4ca;
@@ -376,7 +370,7 @@ p, li {
 
 #bulk {
   float: left;
-  width: 800px;
+  width: 792px;
 	margin: 40px 0px;
   padding: 0px 0px 0px 12px;
   background-color: oldlace;
@@ -399,7 +393,7 @@ p, li {
 }
 
 .between-ratings h2 {
-  margin-top: 6%;
+  margin-top: 5.5%;
 }
 
 .dessert {
@@ -410,8 +404,12 @@ p, li {
 #chilis-main {
 	box-sizing: border-box;
   float: left;
-	width: 60%;
-  margin: 0 2%;
+	width: 58%;
+  margin: 0 3%;
+}
+
+#chilis-main p {
+  margin-bottom: 1.25em;
 }
 
 .left-border {
