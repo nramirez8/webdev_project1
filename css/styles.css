@@ -316,6 +316,7 @@ p, li {
 /* Résumé-specific rules begin below. */
 
 /* Rules for my personal information begin below. */
+
 .gaps {
   margin-bottom: 80px;
 }
@@ -323,7 +324,7 @@ p, li {
 #information {
   float: left;
   width: 320px;
-  /*height: 107rem; Make padding-bottom = 800 --> delete this line */
+  height: auto;
   margin: 0px 20px 0px -20px;
   padding: 10px 20px 800px 25px;
   background-color: #f2c4ca;
@@ -379,6 +380,88 @@ p, li {
 
 #bulk li {
   list-style-type: square;
+}
+
+@media screen and (min-width: 360px){
+  /*#information {
+    float: left;
+    width: 320px;
+    margin: 0px 20px 0px -20px;
+    padding: 10px 20px 0px 25px;
+    background-color: #f2c4ca;
+  }*/
+  
+  #information {
+    float: left;
+    width: 739px;
+    margin: 0;
+    margin-left: -20px;
+    padding: 10px 20px 0px 25px;
+    background-color: #f2c4ca;
+  }
+  
+  #name-desc {
+    float: left;
+    width: 300px;
+    position: relative;
+    top: 250px;
+  }
+  
+  #n2n-info {
+    float: left;
+  }
+
+  #n2n-info h2 {
+    font-size: 20px;
+  }
+
+  #n2n-info p, #n2n-info ul li {
+    font-size: 16px;
+    list-style-type: square;
+  }
+
+  #n2n-info li a {
+    word-wrap: break-word;
+  }
+
+  #n2n-info ol li {
+    font-size: 16px;
+    list-style-type: lower-roman;
+  }
+
+  #n2n-info #info {
+    margin-top: 50px;*/
+  }
+
+  /* Rules for my expertise begin below */
+
+  .gaps2 {
+    margin-top: 50px;
+  }
+
+  .pink-outline {
+    border: 3px solid #f2c4ca;
+    border-radius: 12px;
+    padding: 4px 8px;
+    margin-bottom: 10px;
+  }
+
+  .pink-outline h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  #bulk {
+    float: left;
+    width: 792px;
+    margin: 40px 0px;
+    padding: 0px 0px 0px 12px;
+    background-color: oldlace;
+  }
+
+  #bulk li {
+    list-style-type: square;
+  }
 }
 
 /* Chili's-specific rules begin below. */
