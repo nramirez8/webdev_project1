@@ -396,6 +396,10 @@ p, li {
     background-color: #f2c4ca;
   }
   
+  #information p, #information ul li, #information ol li {
+    font-size: 20px;
+  }
+  
   #name-desc {
     float: left;
     width: 300px;
@@ -422,10 +426,6 @@ p, li {
   #n2n-info h2 {
     font-size: 35px;
   }
-
-  #name-desc p, #n2n-info p, #n2n-info ul li, #n2n-info ol li {
-    font-size: 20px;
-  }
   
   #n2n-info ul li {
     list-style-type: square;
@@ -448,27 +448,38 @@ p, li {
   .gaps2 {
     margin-top: 50px;
   }
-
+  
   .pink-outline {
+    width: 700px;
     border: 3px solid #f2c4ca;
     border-radius: 12px;
-    padding: 4px 8px;
+    padding: 4px 25px 4px 0;
     margin-bottom: 10px;
   }
-
-  .pink-outline h3 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-
+ 
   #bulk {
     float: left;
-    width: 792px;
+    width: 730px;
     margin: 40px 0px;
-    padding: 0px 0px 0px 12px;
+    padding: 0px 12px;
     background-color: oldlace;
   }
-
+  
+  #bulk h2 {
+    font-size: 40px;
+  }
+  
+  #bulk h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+  }
+  
+  #bulk ol li, #bulk ul li {
+    font-size: 20px;
+  }
+ 
   #bulk li {
     list-style-type: square;
   }
