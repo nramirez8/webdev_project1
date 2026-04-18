@@ -4,6 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Nickole's Homepage</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/efa456f68b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -11,77 +17,103 @@
     <header>
       <nav id="main-nav">
       <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
-        <li><a href="chilis_desserts.html">Chili's Desserts</a></li>
+        <li title="Homepage"><a href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
+        <li title="Résumé"><a href="resume.html"><i class="fa-solid fa-file-lines"></i></a></li>
+        <li title="Chili's Desserts"><a href="chilis_desserts.html"><i class="fa-solid fa-pepper-hot"></i></a></li>
       </ul>
     </nav>
     </header>
-    <main id="main-content">
+    <main class="main-content">
       <section id="welcome">
         <h1>Welcome to Nickole's Website!</h1>
-        <img src="media/kuromi.gif" alt="Kuromi from the Japanese Sanrio company blinking gif.">
+        <div id="kuromis">
+          <img id="kuromi1" src="media/kuromi.gif" alt="Kuromi from the Japanese Sanrio company blinking gif.">
+          <img id="kuromi2" src="media/kuromi.gif" alt="Kuromi from the Japanese Sanrio company blinking gif.">
+        </div>
       </section>
       
       <section id="about-me">
-        <h2>About Me:</h2>
-        <img src="media/me_and_computer.jpg" alt="Me (Nickole) doing work on my computer at Illinois Tech.">
-        <p>As you can tell from the title and header of this page, my name is Nickole!
-           I'm a student at the <strong>Illinois Institute of Technology</strong> who is majoring in <strong>Applied Cybersecurity and IT Management</strong>.
-           At the time of this website's creation, I'm just about wrapping up my third year here.
-           I've greatly enjoyed my program so far, especially because it's given me the opportunity to learn from some of the greatest minds out there, including
-           <a href="https://www.iit.edu/directory/people/maurice-dawson" target="_blank">Professor Maurice Dawson</a>,
-           <a href="https://www.iit.edu/directory/people/jeong-hyun-kang" target="_blank">Professor Jeong-Hyun Kang</a>, and
-           <a href="https://itm.iit.edu/speller/" target="_blank">Professor Barry Speller</a>.</p>
-        <img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
-        <p><strong>Fun Fact:</strong> I'm actually Colombian-American! Both of my parents were born and raised in Colombia, while I was born and raised in Chicago,
-           Illinois.</p>
+        <div class="gradient-box">
+          <img class="float-right" src="media/me_and_computer.jpg" alt="Me (Nickole) doing work on my computer at Illinois Tech.">
+          <h2>About Me:</h2>
+          <p class="inline-text">As you can tell from the title and header of this page, my name is Nickole!
+             I'm a student at the <strong>Illinois Institute of Technology</strong> who is majoring in <strong>Applied Cybersecurity and IT Management</strong>.
+             At the time of this website's creation, I'm just about wrapping up my third year here.
+             I've greatly enjoyed my program so far, especially because it's given me the opportunity to learn from some of the greatest minds out there, including
+             <a href="https://www.iit.edu/directory/people/maurice-dawson" target="_blank">Professor Maurice Dawson</a>,
+             <a href="https://www.iit.edu/directory/people/jeong-hyun-kang" target="_blank">Professor Jeong-Hyun Kang</a>, and
+             <a href="https://itm.iit.edu/speller/" target="_blank">Professor Barry Speller</a>.</p>
+          <details class="colombia-content">
+            <summary class="shake-text">
+              <strong>Fun Fact...</strong>
+            </summary>
+            <div class="fun-fact">
+              <p>I'm actually Colombian-American! Both of my parents were born and raised in Colombia, while I was born and raised in Chicago,
+             Illinois.</p>
+              <img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+            </div>
+          </details>
+        </div>
       </section>
       
       <section id="interests">
-        <h2>My Interests:</h2>
+        <div class="flowers interests-content">
+          <h2 class="mcentered">My Interests:</h2>
+          
+          <section id="fav-shows">
+            <div class="media-content">
+              <h3>Favorite TV Shows</h3>
+              <!--<p>I would make this an ordered list, but I'm very indecisive...</p>-->
+              <ul>
+                <li>Aqua Teen Hunger Force</li>
+                <li>Invader Zim</li>
+                <li>BoJack Horseman</li>
+                <li>South Park</li>
+                <li>Breaking Bad</li>
+              </ul>
+            </div>
+            <div class="video">
+              <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/GZdAad0H-7U?start=84&end=112"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                allowfullscreen>
+              </iframe>
+              <p>&#8679; My favorite clip from the first show on my list &#8679;</p>
+            </div>
+          </section>
         
-        <section id="fav-shows">
-          <h3>Favorite TV Shows</h3>
-          <!--<p>I would make this an ordered list, but I'm very indecisive...</p>-->
-          <ul>
-            <li>Aqua Teen Hunger Force</li>
-            <li>Invader Zim</li>
-            <li>BoJack Horseman</li>
-            <li>South Park</li>
-            <li>Breaking Bad</li>
-          </ul>
-          <div id="player">
-            <iframe width="560" height="315"
-              src="https://www.youtube.com/embed/GZdAad0H-7U?start=84&end=112"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
-              allowfullscreen>
-            </iframe>
-            <p>&#8679; My favorite clip from the first show on my list &#8679;</p>
-          </div>
-        </section>
-        
-        <section id="fav-bands">
-          <h3>Favorite Bands</h3>
-          <ol>
-            <li>Limp Bizkit</li>
-            <li>Pierce the Veil</li>
-            <li>Paramore</li>
-            <li>My Chemical Romance</li>
-            <li>The Cure</li>
-          </ol>
-          <p><strong>HMs:</strong> Fall Out Boy, Korn, and Joyce Manor</p>
-          <video controls>
-            <source src="media/limp_bizkit.mp4" type="video/mp4">
-          </video>
-          <p>&#8679; Me at a Limp Bizkit concert &#8679;</p>
-        </section>
-        
+          <section id="fav-bands">
+            <div class="clearme video">
+              <video controls>
+                <source src="media/limp_bizkit.mp4" type="video/mp4">
+              </video>
+              <p>&#8679; Me at a Limp Bizkit concert &#8679;</p>
+            </div>
+            <div class="media-content">
+              <h3>Favorite Bands</h3>
+              <ol>
+                <li>Limp Bizkit</li>
+                <li>Pierce the Veil</li>
+                <li>Paramore</li>
+                <li>My Chemical Romance</li>
+                <li>The Cure</li>
+              </ol>
+              <div class="clearme dotted">
+                <h4 class="mcentered">Honorable Mentions</h4>
+                <ul>
+                  <li>Fall Out Boy</li>
+                  <li>Korn</li>
+                  <li>Joyce Manor</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
     </main>
-    <footer id="footer"> <!--Not too sure about keeping this-->
-      <p>Website by Nickole R.</p>
+    <footer id="footer">
+      <p class="shadow">Website by Nickole R.</p>
       <address>
         <p><a href="mailto:nramirez8@hawk.illinoistech.edu">nramirez8@hawk.illinoistech.edu</a></p>
       </address>

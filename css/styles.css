@@ -1,0 +1,479 @@
+/* Generic classes, ids, and formatted elements begin below. */
+
+.lcentered {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.mcentered {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.rcentered {
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.clearme {
+  clear: both;
+}
+
+.caption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+body {
+  background-image: url("../media/y2k_background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Georgia, Times New Roman, serif;
+}
+
+a {
+  color: darkmagenta;
+}
+
+a:hover, a:visited:hover {
+  color: #615b5b;
+}
+
+a:visited {
+  color: firebrick;
+}
+
+strong {
+  font-weight: 700;
+  font-size: 1em;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gorditas", Georgia, serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p, li {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+#page-wrapper {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
+}
+
+#main-nav {
+  float: left;
+  width: 100%;
+  background-color: #ebb2cf;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  left:50%;
+}
+
+#main-nav ul li {
+  float: left;
+  position: relative;
+  right: 50%
+}
+
+#main-nav ul li a {
+  font-family: Georgia, Times New Roman, serif;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#main-nav ul li a:hover {
+  text-shadow: 0px 0px 0px #000;
+  background-color: #b38282;
+}
+
+/* Homepage-specific rules begin below. */
+
+/* Rules for the part of my homepage begin below. */
+
+#kuromis {
+  margin-top: 20px;
+}
+
+#kuromis img {
+  max-width: 30%;
+  height: auto;
+}
+
+#kuromi2 {
+  float: right;
+}
+
+.main-content {
+  background-color: oldlace;
+  margin-bottom: 0px;
+  padding: 0px 20px;
+  overflow: auto;
+}
+
+.gradient-box {
+  background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 179, 1) 86%);
+  margin: 30px auto;
+  margin-bottom: 0px;
+  min-height: 235px;
+  max-width: 88%;
+  padding: 35px 20px 22px 30px;
+  border: 3px solid #e48aa0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#about-me h2 {
+  margin-top: 25px;
+}
+
+.inline-text {
+  display: inline;
+  margin: 0;
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px;
+  max-width: 30%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.colombia-content {
+  margin-top: 100px;
+}
+
+.colombia-content summary {
+  font-family: Georgia, Times New Roman, serif;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.shake-text:hover {
+  animation: shake 0.8s infinite;
+}
+
+/* ↑ Credit to Whiz Master on YouTube for this animation tutorial ↓ */
+
+@keyframes shake {
+  0% {transform: translateY(0);}
+  25% {transform: translateY(-1px);}
+  50% {transform: translateY(1px);}
+  75% {transform: translateY(-1px);}
+  100% {transform: translateY(0);}
+}
+
+.fun-fact {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.fun-fact p {
+  display: block;
+  margin: 7px auto;
+}
+
+.fun-fact img {
+  clear: both;
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Rules for the second part of my homepage begin below. */
+
+.flowers {
+  background-image: url("../media/flowers.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#interests h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.interests-content {
+  margin: 30px auto;
+  margin-bottom: 20px;
+  /*min-height: 294px;*/
+  max-width: 80%;
+  padding: 5px 12px 0px 24px;
+  border: 3px solid #e48aa0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#fav-shows, #fav-bands {
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+#fav-shows iframe {
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+}
+
+#fav-bands video {
+  max-height: 480px;
+  max-width: 270px;
+}
+
+.video {
+  float: left;
+  /*max-width: 100%;*/
+  width: 55%;
+}
+
+.video iframe, .video video {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  display: block; 
+  margin: 0px auto;
+}
+
+.video p {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.media-content {
+  float: right;
+  /*max-width: 100%;*/
+  width: 40%;
+  margin-left: 5%;
+}
+
+.media-content ol {
+  padding-bottom: 26px;
+}
+
+.dotted {
+  margin-top: 10px;
+  max-width: 70%;
+  padding: 0px 12px 0px 12px;
+  border: 3px dotted #e48aa0;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.dotted h4 {
+  font-weight: 500;
+  margin: 18px 0px 12px 0;
+}
+
+.dotted ul {
+  padding-left: 25px;
+}
+
+.dotted ul li {
+  font-size: 16px;
+}
+
+/* Résumé-specific rules begin below. */
+
+/* Rules for my personal information begin below. */
+.gaps {
+  margin-bottom: 80px;
+}
+
+#information {
+  float: left;
+  width: 320px;
+  /*height: 107rem; Make padding-bottom = 800 --> delete this line */
+  margin: 0px 20px 0px -20px;
+  padding: 10px 20px 800px 25px;
+  background-color: #f2c4ca;
+}
+
+#information h2 {
+  font-size: 20px;
+}
+
+#information p, #information ul li {
+  font-size: 16px;
+  list-style-type: square;
+}
+
+#information li a {
+  word-wrap: break-word;
+}
+
+#information ol li {
+  font-size: 16px;
+  list-style-type: lower-roman;
+}
+
+#info {
+  margin-top: 50px;
+}
+
+/* Rules for my expertise begin below */
+
+.gaps2 {
+  margin-top: 50px;
+}
+
+.pink-outline {
+  border: 3px solid #f2c4ca;
+  border-radius: 12px;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+}
+
+.pink-outline h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#bulk {
+  float: left;
+  width: 792px;
+	margin: 40px 0px;
+  padding: 0px 0px 0px 12px;
+  background-color: oldlace;
+}
+
+#bulk li {
+  list-style-type: square;
+}
+
+/* Chili's-specific rules begin below. */
+
+.chilis-front {
+  width: 90%;
+  height: auto;
+}
+
+.chilis-image {
+  margin-top: 3.5%;
+  text-align: center;
+}
+
+.between-ratings h2 {
+  margin-top: 5.5%;
+}
+
+.dessert {
+  width: 65%;
+  height: auto;
+}
+
+#chilis-main {
+	box-sizing: border-box;
+  float: left;
+	width: 58%;
+  margin: 0 3%;
+}
+
+#chilis-main p {
+  margin-bottom: 1.25em;
+}
+
+.left-border {
+  padding-left: 1%;
+  border-left: 6px solid #eaa1a8;
+}
+
+#alternatives {
+	box-sizing: border-box;
+  background-color: #fad4d9;
+  float: left;
+  max-width: 25%;
+  margin: 0 2% 2% 5%;
+  padding-bottom: 0.75%;
+  border: 2px solid #eaa1a8;
+  border-top: 0px;
+}
+
+.boo-chilis audio {
+  width: 90%;
+  margin-bottom: 4%;
+}
+
+#aside-content h2 {
+  margin-top: 7%;
+  max-width: 100%
+}
+
+#aside-content img {
+  padding: 0;
+	margin: 7% 0 0 0;
+  max-width: 100%;
+  height: auto;
+}
+
+#aside-content ol li {
+  list-style-type: lower-roman;
+}
+
+/* Footer rules begin below. */
+
+#footer {
+  background-color: #ebb2cf;
+  height: 65px;
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#footer p {
+  color: white;
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  font-weight: bold;
+  font-size: 14px;
+ }
+
+#footer p a {
+  font-weight: normal;
+}
+
+.shadow {
+  text-shadow: 1px 1px 5px #000000;
+}
