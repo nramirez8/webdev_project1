@@ -427,6 +427,10 @@ p, li {
     font-size: 35px;
   }
   
+  #n2n-info ul li, #n2n-info ol li {
+    padding-bottom: 7px;
+  }
+  
   #n2n-info ul li {
     list-style-type: square;
   }
@@ -461,7 +465,7 @@ p, li {
     float: left;
     width: 730px;
     margin: 40px 0px;
-    padding: 0px 12px;
+    padding-left: 8px;
     background-color: oldlace;
   }
   
@@ -473,11 +477,12 @@ p, li {
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 0px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   
   #bulk ol li, #bulk ul li {
     font-size: 20px;
+    padding-bottom: 7px;
   }
  
   #bulk li {
