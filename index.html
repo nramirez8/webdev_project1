@@ -6,6 +6,8 @@
   <title>Nickole's Homepage</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/boxslider.css">
+  <script async src="js/js-boxslider.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
@@ -50,7 +52,18 @@
             <div class="fun-fact">
               <p>I'm actually Colombian-American! Both of my parents were born and raised in Colombia, while I was born and raised in Chicago,
              Illinois.</p>
-              <img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+              <div class="carousel-wrapper">
+                <div class="carousel">
+                  <img class="carousel__photo initial" src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+                  <img class="carousel__photo" src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+                  <img class="carousel__photo" src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+                  <img class="carousel__photo" src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+                  <img class="carousel__photo" src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+                  <div class="carousel__button--next"></div>
+                  <div class="carousel__button--prev"></div>
+                </div>
+              </div>
+              <!--<img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses."> -->
             </div>
           </details>
         </div>
