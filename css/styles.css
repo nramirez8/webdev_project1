@@ -19,10 +19,11 @@
   clear: both;
 }
 
-.caption {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 5px;
+.main-content {
+  background-color: oldlace;
+  margin-bottom: 0px;
+  padding: 0px 20px;
+  overflow: auto;
 }
 
 body {
@@ -140,13 +141,6 @@ p, li {
 
 #kuromi2 {
   float: right;
-}
-
-.main-content {
-  background-color: oldlace;
-  margin-bottom: 0px;
-  padding: 0px 20px;
-  overflow: auto;
 }
 
 .gradient-box {
@@ -317,6 +311,10 @@ p, li {
 
 /* Rules for my personal information begin below. */
 
+#main-no-padding {
+  padding-right: 0px;
+}
+
 .gaps {
   margin-bottom: 60px;
 }
@@ -425,7 +423,7 @@ p, li {
 
 @media screen and (min-width: 1080px){
 /* Rules for my personal information begin below. (2) */
-
+  
   .gaps {
     margin-bottom: 80px;
   }
@@ -435,7 +433,7 @@ p, li {
     width: 320px;
     height: auto;
     margin: 0px 20px 0px -20px;
-    padding: 10px 20px 800px 25px;
+    padding: 10px 20px 795px 25px;
     background-color: #f2c4ca;
   }
 
@@ -466,7 +464,7 @@ p, li {
 
   #n2n-info {
     clear: both;
-    width: 300px;
+    width: 320px;
     padding-left: 0px;
   }
 
@@ -488,7 +486,7 @@ p, li {
     width: 775px;
     border: 3px solid #f2c4ca;
     border-radius: 12px;
-    padding: 4px 8px 4px 10px;
+    padding: 4px 8px 0px 10px;
     margin-bottom: 10px;
   }
 
@@ -535,6 +533,12 @@ p, li {
 .dessert {
   width: 65%;
   height: auto;
+}
+
+.caption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 #chilis-main {
