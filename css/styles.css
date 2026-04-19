@@ -551,6 +551,7 @@ p, li {
     clear: both;
     padding: 0px;
     margin: 0px;
+    position: relative;
     top: 15px;
     left: -28px;
   }
@@ -616,8 +617,10 @@ p, li {
   }
 }
 
+
+
 /* Media query for laptop screens (RESUMÉ PAGE). */
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1400px){
 /* Rules for my personal information begin below. (3) */
   
   .gaps {
@@ -626,10 +629,10 @@ p, li {
 
   #information {
     float: left;
-    width: 320px;
+    width: 300px;
     height: auto;
     margin: 0px 20px 0px -20px;
-    padding: 10px 20px 813px 25px;
+    padding: 10px 20px 810px 20px;
     background-color: #f2c4ca;
   }
 
@@ -643,10 +646,11 @@ p, li {
   
   #name-desc {
     clear: both;
-    position: static;
     padding: 0px;
     margin: 0px;
-    padding-left: 10px;
+    position: relative;
+    top: 15px;
+    left: 0px;
   }
 
   #name-desc h1 {
@@ -678,17 +682,9 @@ p, li {
     margin-top: 50px;
   }
 
-  .pink-outline {
-    width: 775px;
-    border: 3px solid #f2c4ca;
-    border-radius: 12px;
-    padding: 4px 8px 0px 10px;
-    margin-bottom: 10px;
-  }
-
   #bulk {
     float: left;
-    width: 795px;
+    width: 735px;
     margin: 40px 0px;
     padding: 0px 12px;
     background-color: oldlace;
@@ -707,5 +703,34 @@ p, li {
   #bulk ol li, #bulk ul li {
     padding-bottom: 7px;
     font-size: 18px;
+  }
+  
+  .pink-outline {
+    border: 3px solid #f2c4ca;
+    border-radius: 12px;
+    padding: 4px 8px 0px 10px;
+    margin-bottom: 10px;
+  }
+
+  #schools {
+    width: 320px;
+    float: left;
+  }
+  
+  #certs {
+    width: 320px;
+    float: left;
+    margin-left: 30px;
+    padding-bottom: 9px;
+  }
+
+  #education::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  #experience-deets, #accomplishment-deets {
+    width: 695px;
   }
 }
