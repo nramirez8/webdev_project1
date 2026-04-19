@@ -391,7 +391,7 @@ p, li {
   width: 700px;
   border: 3px solid #f2c4ca;
   border-radius: 12px;
-  padding: 4px 25px 4px 0;
+  padding: 4px 25px 4px 0px;
   margin-bottom: 10px;
 }
 
@@ -446,9 +446,36 @@ p, li {
   #information p, #information ul li, #information ol li {
     font-size: 16px;
   }
+  
+  #name-desc {
+    clear: both;
+    position: static;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 10px;
+  }
+
+  #name-desc h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #name-desc p {
+    text-align: center;
+  }
+
+  #n2n-info {
+    clear: both;
+    width: 300px;
+    padding-left: 0px;
+  }
+
+  #n2n-info h2 {
+    font-size: 20px;
+  }
 
   #n2n-info #info {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 
   /* Rules for my expertise begin below. (2) */
@@ -458,27 +485,34 @@ p, li {
   }
 
   .pink-outline {
+    width: 775px;
     border: 3px solid #f2c4ca;
     border-radius: 12px;
-    padding: 4px 8px;
+    padding: 4px 8px 4px 10px;
     margin-bottom: 10px;
   }
 
   #bulk {
     float: left;
-    width: 792px;
+    width: 795px;
     margin: 40px 0px;
     padding: 0px 0px 0px 12px;
     background-color: oldlace;
   }
   
+  #bulk h2 {
+    font-size: 30px;
+  }
+  
   #bulk h3 {
+    font-size: 20px;
     margin-top: 10px;
     margin-bottom: 0px;
   }
   
   #bulk ol li, #bulk ul li {
     padding-bottom: 7px;
+    font-size: 18px;
   }
 }
 
