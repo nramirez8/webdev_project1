@@ -335,7 +335,7 @@ p, li {
 #name-desc {
   float: left;
   width: 300px;
-  padding-right: 10px;
+  padding-right: 20px;
   position: relative;
   top: 300px;
 }
@@ -351,7 +351,7 @@ p, li {
 
 #n2n-info {
   float: left;
-  width: 400px;
+  width: 380px;
   padding-left: 20px;
 }
 
@@ -433,7 +433,7 @@ p, li {
     width: 320px;
     height: auto;
     margin: 0px 20px 0px -20px;
-    padding: 10px 20px 795px 25px;
+    padding: 10px 20px 813px 25px;
     background-color: #f2c4ca;
   }
 
@@ -494,7 +494,7 @@ p, li {
     float: left;
     width: 795px;
     margin: 40px 0px;
-    padding: 0px 0px 0px 12px;
+    padding: 0px 12px 0px 12px;
     background-color: oldlace;
   }
   
