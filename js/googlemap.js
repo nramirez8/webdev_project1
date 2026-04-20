@@ -1,30 +1,19 @@
-/*function init(){
-	//alert('it works');*/
-let gmap;
-async function initMap() {
-  alert('it does not work');
-  const { Map, RenderingType } = (await google.maps.importLibrary('maps'));
-  gmap = new Map(document.getElementById('gmap'), {
-    center: { lat: 34.06121890730218, lng: -118.29422909688951 },
-    zoom: 20,
-    renderingType: RenderingType.VECTOR,
-  });
-}
-  
-	/*var container = document.getElementById('gmap');
-	var myLocation = new google.maps.LatLng(34.06121890730218, -118.29422909688951);
+function init(){
+	//alert('it works');
+	var gmap = document.getElementById('gmap');
+	var myLocation = new google.maps.LatLng(34.061574863566634, -118.29450659755325);
 	var mapOptions = {
 		center: myLocation,
 		zoom: 20,
-		mapTypeId: google.maps.MapTypeId.SATELLITE,
+		mapTypeId: google.maps.MapTypeId.HYBRID,
 		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.BOTTOM_CENTER
+			position: google.maps.ControlPosition.TOP_LEFT
 		}
 	};
 
-	var myMap = new google.maps.Map(el, mapOptions);
+	var myMap = new google.maps.Map(gmap, mapOptions);
 
-	var marker = new google.maps.Marker({
+	/*var marker = new google.maps.Marker({
 		position: myLocation,
 		map: myMap,
 		animation: google.maps.Animation.BOUNCE,
@@ -39,7 +28,8 @@ async function initMap() {
 
 	google.maps.event.addListener(marker, 'mouseover', function() {
     	infowindow.open(myMap, marker);
-  	});
-}*/
+  	});*/
 
-//google.maps.event.addDomListener(window, 'load', initMap);
+}
+
+google.maps.event.addDomListener(window, 'load', init);
