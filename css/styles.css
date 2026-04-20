@@ -523,6 +523,16 @@ p, li {
   margin-bottom: 4%;
 }
 
+#gmap h2 {
+  text-align: center;
+  margin: 0;
+}
+
+#gmap p {
+  font-family: Georgia, Times New Roman, serif;
+  text-align: center;
+}
+
 /* Media query for tablets (RESUMÉ PAGE). */
 @media screen and (min-width: 981px) {
   .gaps {
