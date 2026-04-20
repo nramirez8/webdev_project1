@@ -6,7 +6,7 @@ function init(){
 		zoom: 20,
 		mapTypeId: google.maps.MapTypeId.HYBRID,
 		mapTypeControlOptions: {
-			position: google.maps.ControlPosition.TOP_LEFT
+			position: google.maps.ControlPosition.TOP_RIGHT
 		}
 	};
 
@@ -15,11 +15,22 @@ function init(){
   var threeCheersMarker = new google.maps.Marker({
     position: {lat: 34.0615500, lng: -118.2945200},
     map: myMap,
+    animation: google.maps.Animation.DROP,
     icon: {
       url: 'media/three_cheers.jpg',
-      scaledSize: new google.maps.Size(50, 50)
-    }
-  });  
+      scaledSize: new google.maps.Size(70, 70)
+    } 
+  });
+  
+  var description = '<h2>Helena Church</h2><p>This is the church in which the famous music video for My Chemical Romance\'s \"Helena\" was recorded.</p>';
+
+	var infoWindow = new google.maps.InfoWindow({
+      content: description
+  });
+
+  google.maps.event.addListener(threeCheersMarker, 'mouseover', function() {
+    infoWindow.open(myMap, threeCheersMarker);
+  });
 }
 
 google.maps.event.addDomListener(window, 'load', init);
