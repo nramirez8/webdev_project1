@@ -1,5 +1,4 @@
 function init(){
-	//alert('it works');
 	var gmap = document.getElementById('gmap');
 	var myLocation = new google.maps.LatLng(34.061574863566634, -118.29450659755325);
 	var mapOptions = {
@@ -12,7 +11,18 @@ function init(){
 	};
 
 	var myMap = new google.maps.Map(gmap, mapOptions);
+  
+  var threeCheersMarker = new google.maps.Marker({
+    position: {lat: 34.0615500, lng: -118.2945200},
+    map: myMap,
+    icon: {
+      url: 'media/three_cheers.jpg',
+      scaledSize: new google.maps.Size(50, 50)
+    }
+  });  
+}
 
+google.maps.event.addDomListener(window, 'load', init);
 	/*var marker = new google.maps.Marker({
 		position: myLocation,
 		map: myMap,
@@ -29,7 +39,3 @@ function init(){
 	google.maps.event.addListener(marker, 'mouseover', function() {
     	infowindow.open(myMap, marker);
   	});*/
-
-}
-
-google.maps.event.addDomListener(window, 'load', init);
