@@ -519,7 +519,7 @@ p, li {
 /* Rules for my Google Map page. */
 
 #gmap {
-  height: 600px;
+  height: 570px;
   margin-bottom: 4%;
 }
 
@@ -542,7 +542,7 @@ p, li {
 }
 
 #helena-desc p, #route-desc p {
-  font-size: 17px;
+  font-size: 18px;
 }
 
 #route-desc p  {
