@@ -516,6 +516,12 @@ p, li {
   text-shadow: 1px 1px 5px #000000;
 }
 
+/* Rules for my Google Map page. */
+#gmap {
+  height: 500px;
+  margin-bottom: 4%;
+}
+
 /* Media query for tablets (RESUMÉ PAGE). */
 @media screen and (min-width: 981px) {
   .gaps {
