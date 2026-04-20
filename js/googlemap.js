@@ -1,7 +1,7 @@
 function init(){
   // Coding my map
 	var gmap = document.getElementById('gmap');
-	var myLocation = new google.maps.LatLng(34.06171035221062, -118.29433845234723);
+	var myLocation = new google.maps.LatLng(34.06165385703419, -118.29434348743663);
 	var mapOptions = {
 		center: myLocation,
 		zoom: 20,
@@ -15,12 +15,12 @@ function init(){
 
   // Dropping the TCFSR album cover over the church
   var threeCheersMarker = new google.maps.Marker({
-    position: {lat: 34.0615500, lng: -118.2945200},
+    position: {lat: 34.0615200, lng: -118.2945200},
     map: myMap,
     animation: google.maps.Animation.DROP,
     icon: {
       url: 'media/three_cheers.jpg',
-      scaledSize: new google.maps.Size(70, 70)
+      scaledSize: new google.maps.Size(100, 100)
     },
     title: "Click me!"
   });
