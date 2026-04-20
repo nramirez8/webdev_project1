@@ -19,10 +19,11 @@
   clear: both;
 }
 
-.caption {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 5px;
+.main-content {
+  background-color: oldlace;
+  margin-bottom: 0px;
+  padding: 0px 20px;
+  overflow: auto;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
 
 a {
   color: darkmagenta;
+  text-decoration: none;
 }
 
 a:hover, a:visited:hover {
@@ -142,13 +144,6 @@ p, li {
   float: right;
 }
 
-.main-content {
-  background-color: oldlace;
-  margin-bottom: 0px;
-  padding: 0px 20px;
-  overflow: auto;
-}
-
 .gradient-box {
   background: radial-gradient(circle,rgba(250, 215, 232, 1) 30%, rgba(235, 178, 179, 1) 86%);
   margin: 30px auto;
@@ -213,14 +208,6 @@ p, li {
   margin: 7px auto;
 }
 
-.fun-fact img {
-  clear: both;
-  display: block;
-  margin: 0px auto;
-  max-width: 100%;
-  border-radius: 12px;
-}
-
 /* Rules for the second part of my homepage begin below. */
 
 .flowers {
@@ -283,7 +270,6 @@ p, li {
 
 .media-content {
   float: right;
-  /*max-width: 100%;*/
   width: 40%;
   margin-left: 5%;
 }
@@ -317,65 +303,111 @@ p, li {
 /* Résumé-specific rules begin below. */
 
 /* Rules for my personal information begin below. */
+
+#main-no-padding {
+  padding-right: 0px;
+}
+
 .gaps {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 #information {
   float: left;
-  width: 320px;
-  /*height: 107rem; Make padding-bottom = 800 --> delete this line */
-  margin: 0px 20px 0px -20px;
-  padding: 10px 20px 800px 25px;
+  width: 734px;
+  margin: 0px;
+  margin-left: -20px;
+  padding: 0px 20px 0px 30px;
   background-color: #f2c4ca;
 }
 
-#information h2 {
+#information p, #information ul li, #information ol li {
   font-size: 20px;
 }
 
-#information p, #information ul li {
-  font-size: 16px;
+#name-desc {
+  float: left;
+  width: 300px;
+  padding-right: 20px;
+  position: relative;
+  top: 320px;
+}
+
+#name-desc h1 {
+  font-size: 55px;
+  text-align: left;
+}
+
+#name-desc p {
+  text-align: left;
+}
+
+#n2n-info {
+  float: left;
+  width: 380px;
+  padding-left: 20px;
+}
+
+#n2n-info h2 {
+  font-size: 35px;
+}
+
+#n2n-info ul li, #n2n-info ol li {
+  padding-bottom: 7px;
+}
+
+#n2n-info ul li {
   list-style-type: square;
 }
 
-#information li a {
-  word-wrap: break-word;
-}
-
-#information ol li {
-  font-size: 16px;
+#n2n-info ol li {
   list-style-type: lower-roman;
 }
 
-#info {
-  margin-top: 50px;
+#n2n-info li a {
+  word-wrap: break-word;
 }
 
-/* Rules for my expertise begin below */
+#n2n-info #info {
+  margin-top: 60px;
+}
+
+/* Rules for my expertise begin below. */
 
 .gaps2 {
   margin-top: 50px;
 }
 
 .pink-outline {
+  width: 700px;
   border: 3px solid #f2c4ca;
   border-radius: 12px;
-  padding: 4px 8px;
+  padding: 4px 25px 4px 0px;
   margin-bottom: 10px;
-}
-
-.pink-outline h3 {
-  margin-top: 10px;
-  margin-bottom: 0px;
 }
 
 #bulk {
   float: left;
-  width: 792px;
-	margin: 40px 0px;
-  padding: 0px 0px 0px 12px;
+  width: 730px;
+  margin: 40px 0px;
+  padding-left: 8px;
   background-color: oldlace;
+}
+
+#bulk h2 {
+  font-size: 40px;
+}
+
+#bulk h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+}
+
+#bulk ol li, #bulk ul li {
+  font-size: 20px;
+  padding-bottom: 7px;
 }
 
 #bulk li {
@@ -401,6 +433,12 @@ p, li {
 .dessert {
   width: 65%;
   height: auto;
+}
+
+.caption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 #chilis-main {
@@ -476,4 +514,219 @@ p, li {
 
 .shadow {
   text-shadow: 1px 1px 5px #000000;
+}
+
+/* Rules for my Google Map page. */
+#gmap {
+  height: 500px;
+  margin-bottom: 4%;
+}
+
+/* Media query for tablets (RESUMÉ PAGE). */
+@media screen and (min-width: 981px) {
+  .gaps {
+    margin-bottom: 80px;
+  }
+
+  #information {
+    float: left;
+    width: 250px;
+    height: auto;
+    margin: 0px 20px 0px -20px;
+    padding: 10px 20px 1280px 22px;
+    background-color: #f2c4ca;
+  }
+
+  #information h2 {
+    font-size: 30px;
+  }
+
+  #information p, #information ul li, #information ol li {
+    font-size: 17px;
+  }
+  
+  #name-desc {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 15px;
+    left: -28px;
+  }
+
+  #name-desc h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #name-desc p {
+    text-align: center;
+  }
+
+  #n2n-info {
+    clear: both;
+    width: 230px;
+    padding-left: 0px;
+  }
+
+  #n2n-info h2 {
+    font-size: 22px;
+  }
+
+  #n2n-info #info {
+    margin-top: 50px;
+  }
+
+  /* Rules for my expertise begin below. (3) */
+
+  .gaps2 {
+    margin-top: 50px;
+  }
+
+  .pink-outline {
+    width: 405px;
+    border: 3px solid #f2c4ca;
+    border-radius: 12px;
+    padding: 4px 8px 0px 10px;
+    margin-bottom: 10px;
+  }
+
+  #bulk {
+    float: left;
+    width: 440px;
+    margin: 40px 0px;
+    padding: 0px 12px;
+    background-color: oldlace;
+  }
+  
+  #bulk h2 {
+    font-size: 30px;
+  }
+  
+  #bulk h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  #bulk ol li, #bulk ul li {
+    padding-bottom: 7px;
+    font-size: 18px;
+  }
+}
+
+/* Media query for laptop screens (RESUMÉ PAGE). */
+@media screen and (min-width: 1400px){
+/* Rules for my personal information begin below. (3) */
+  
+  .gaps {
+    margin-bottom: 80px;
+  }
+
+  #information {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin: 0px 20px 0px -20px;
+    padding: 10px 20px 810px 20px;
+    background-color: #f2c4ca;
+  }
+
+  #information h2 {
+    font-size: 20px;
+  }
+
+  #information p, #information ul li, #information ol li {
+    font-size: 16px;
+  }
+  
+  #name-desc {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 15px;
+    left: 0px;
+  }
+
+  #name-desc h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  #name-desc p {
+    text-align: center;
+  }
+
+  #n2n-info {
+    clear: both;
+    width: 320px;
+    padding-left: 0px;
+  }
+
+  #n2n-info h2 {
+    font-size: 20px;
+  }
+
+  #n2n-info #info {
+    margin-top: 35px;
+  }
+
+  /* Rules for my expertise begin below. (3) */
+
+  .gaps2 {
+    margin-top: 50px;
+  }
+
+  #bulk {
+    float: left;
+    width: 735px;
+    margin: 40px 0px;
+    padding: 0px 12px;
+    background-color: oldlace;
+  }
+  
+  #bulk h2 {
+    font-size: 30px;
+  }
+  
+  #bulk h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  #bulk ol li, #bulk ul li {
+    padding-bottom: 7px;
+    font-size: 18px;
+  }
+  
+  .pink-outline {
+    border: 3px solid #f2c4ca;
+    border-radius: 12px;
+    padding: 4px 8px 0px 10px;
+    margin-bottom: 10px;
+  }
+
+  #schools {
+    width: 320px;
+    float: left;
+  }
+  
+  #certs {
+    width: 320px;
+    float: left;
+    margin-left: 30px;
+    padding-bottom: 9px;
+  }
+
+  #education::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  #experience-deets, #accomplishment-deets {
+    width: 695px;
+  }
 }

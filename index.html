@@ -6,10 +6,12 @@
   <title>Nickole's Homepage</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/boxslider.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/efa456f68b.js" crossorigin="anonymous"></script>
+  <script async src="js/js-boxslider.js"></script>
 </head>
 
 <body>
@@ -20,6 +22,7 @@
         <li title="Homepage"><a href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
         <li title="Résumé"><a href="resume.html"><i class="fa-solid fa-file-lines"></i></a></li>
         <li title="Chili's Desserts"><a href="chilis_desserts.html"><i class="fa-solid fa-pepper-hot"></i></a></li>
+        <li title="Google Map"><a href="maps.html"><i class="fa-solid fa-location-dot"></i></a></li>
       </ul>
     </nav>
     </header>
@@ -50,7 +53,18 @@
             <div class="fun-fact">
               <p>I'm actually Colombian-American! Both of my parents were born and raised in Colombia, while I was born and raised in Chicago,
              Illinois.</p>
-              <img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+              <div class="carousel-wrapper">
+                <div class="carousel">
+                  <img class="carousel__photo initial" src="media/colombian_landscape.jpeg" alt="A landscape showing the bright colors and art on the sides of Colombian houses.">
+                  <img class="carousel__photo" src="media/la_marina.jpeg" alt="Me (Nickole) in front of a sign introducing the small Colombian town of La Marina.">
+                  <img class="carousel__photo" src="media/finca.jpeg" alt="A view of a Colombian finca or rural country estate.">
+                  <img class="carousel__photo" src="media/colombia_street.jpeg" alt="One of the streets of Colombia.">
+                  <img class="carousel__photo" src="media/migao.jpg" alt="A traditional Colombian dish known as 'migao.' / Photo: Shutterstock">
+                  <div class="carousel__button--next"></div>
+                  <div class="carousel__button--prev"></div>
+                </div>
+              </div>
+              <!--<img src="media/colombian_landscape.jpg" alt="A landscape showing the bright colors and art on the sides of Colombian houses."> -->
             </div>
           </details>
         </div>
