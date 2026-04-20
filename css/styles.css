@@ -519,7 +519,7 @@ p, li {
 /* Rules for my Google Map page. */
 
 #gmap {
-  height: 500px;
+  height: 600px;
   margin-bottom: 4%;
 }
 
@@ -531,6 +531,27 @@ p, li {
 #gmap p {
   font-family: Georgia, Times New Roman, serif;
   text-align: center;
+}
+
+#helena-desc, #route-desc {
+  max-width: 250px;
+}
+
+#helena-desc h3 {
+  font-size: 26px;
+}
+
+#helena-desc p, #route-desc p {
+  font-size: 17px;
+}
+
+#route-desc p  {
+  margin-top: 0px;
+}
+
+.gm-style .gm-style-iw-c, .gm-style .gm-style-iw-t::after {
+  border: 3px solid #ebb2cf;
+  border-bottom: 0px;
 }
 
 /* Media query for tablets (RESUMÉ PAGE). */
